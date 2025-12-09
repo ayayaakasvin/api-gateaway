@@ -12,6 +12,9 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Gateaway-Key "${X_GATEAWAY_KEY}";
 
+        proxy_ssl_protocols TLSv1.2;
+        proxy_ssl_verify off;
+
         proxy_buffering off;
         proxy_request_buffering off;
     }
