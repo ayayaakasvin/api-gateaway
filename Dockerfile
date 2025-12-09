@@ -1,7 +1,6 @@
 FROM nginx:alpine
 
-# Copy custom nginx config
-COPY nginx.conf.template /etc/nginx/templates/nginx.conf.template
+COPY nginx/template/default.conf.template /etc/nginx/templates/default.conf.template
 
 EXPOSE 80
 
